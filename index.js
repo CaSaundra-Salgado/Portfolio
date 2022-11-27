@@ -66,7 +66,6 @@ messageForm.addEventListener("submit", (event) => {
 });  
 
 
-
 fetch("https://api.github.com/users/CaSaundra-Salgado/repos")
     .then(response => response.json())
     .then(githubRequest => { 
@@ -87,6 +86,6 @@ fetch("https://api.github.com/users/CaSaundra-Salgado/repos")
             a.href = "https://github.com/CaSaundra-Salgado?tab=repositories";
             a.textContent = text;
             repoLinks[i].appendChild(a);
-        };   
+        };  
     })
     .catch(error => alert("Looks like there was a problem!", error)); // catching an error and displaying an alert dialog box
